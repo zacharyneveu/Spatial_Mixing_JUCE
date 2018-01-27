@@ -8,6 +8,12 @@ TODO:
 1. Implement distance framework
 2. Research and implement audio principles
 
+Status
+------
+Check out GUI Stage 1! Looks iffy, I know... Implements alternate look though to
+facilitate future design changes.
+![Alt Text](./Images/Screenshot.jpg)
+
 The goal of this app is to eventually include effects to account for:
 * Volume change by distance
 * EQ change with distance

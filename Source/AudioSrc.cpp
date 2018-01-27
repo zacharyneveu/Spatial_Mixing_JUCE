@@ -43,10 +43,6 @@ void AudioSrc::paint (Graphics& g)
     //Fill circle
     g.setColour (Colours::lightblue);
 	g.fillEllipse(0, 0, getWidth(), getHeight());
-    //black outline
-    g.setColour (Colours::black);
-    int thick = 5;
-	g.drawEllipse(thick, thick, getWidth()-2*thick, getHeight()-2*thick, 2*thick);
 
     //paint text
     g.setColour (Colours::grey);

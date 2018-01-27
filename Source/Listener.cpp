@@ -35,10 +35,6 @@ void Listener::paint (Graphics& g)
 
     g.setColour (Colours::lightblue);
 	g.fillEllipse(0, 0, getWidth(), getHeight());
-    //black outline
-    g.setColour (Colours::black);
-    int thick = 5;
-	g.drawEllipse(thick, thick, getWidth()-2*thick, getHeight()-2*thick, thick);
 
     g.setColour (Colours::grey);
     g.setFont (24.0f);
