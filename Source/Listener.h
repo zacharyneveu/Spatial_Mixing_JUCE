@@ -12,6 +12,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "AltLook.h"
+#include "Images.h"
 
 //==============================================================================
 /*
@@ -47,4 +48,5 @@ class Listener : public Component
 	AltLook altLook; //include style instance
 
 	ComponentDragger dragger; //to drag component
+	Image earIcon;
 };

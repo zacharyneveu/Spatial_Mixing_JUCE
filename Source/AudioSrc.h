@@ -12,6 +12,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "AltLook.h"
+#include "Images.h"
 
 //==============================================================================
 /*
@@ -54,5 +55,7 @@ private:
 	ComponentDragger dragger; //to drag component
 
 	AltLook altLook; //instance of alt style
+
+	Image speakerIcon; //icon
 
 };

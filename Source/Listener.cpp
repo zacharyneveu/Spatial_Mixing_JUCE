@@ -21,6 +21,8 @@ Listener::Listener()
     volume.setTextBoxStyle(Slider::NoTextBox, false, 0, 0);
     volume.setLookAndFeel(&altLook);
 	addAndMakeVisible(volume);
+
+    earIcon = ImageCache::getFromMemory(Images::ear_png, Images::ear_pngSize);
 }
 
 Listener::~Listener()
@@ -29,17 +31,19 @@ Listener::~Listener()
 
 void Listener::paint (Graphics& g)
 {
-
     g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));   // clear the background
 
     g.setColour (Colours::lightblue);
-    //g.fillEllipse (getWidth()/2 - radius, getHeight()/2 - radius, radius, radius);   // draw an outline around the component
 	g.fillEllipse(0, 0, getWidth(), getHeight());
+    //black outline
+    g.setColour (Colours::black);
+    int thick = 5;
+	g.drawEllipse(thick, thick, getWidth()-2*thick, getHeight()-2*thick, thick);
 
     g.setColour (Colours::grey);
     g.setFont (24.0f);
-    g.drawText ("Listener", getLocalBounds(),
-                Justification::centred, true);   // draw some placeholder text
+
+    g.drawImage(earIcon, 25, 25, 50, 50, 0, 0, 512, 512);
 }
 
 void Listener::resized()

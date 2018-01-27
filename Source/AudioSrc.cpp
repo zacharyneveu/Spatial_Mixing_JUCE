@@ -21,6 +21,8 @@ AudioSrc::AudioSrc()
     volume.setLookAndFeel(&altLook);
     addAndMakeVisible(volume);
 
+    // Initialize icon
+    speakerIcon = ImageCache::getFromMemory(Images::source_png, Images::source_pngSize);
 }
 
 AudioSrc::~AudioSrc()
@@ -35,16 +37,21 @@ void AudioSrc::paint (Graphics& g)
        You should replace everything in this method with your own
        drawing code..
     */
+    // clear the background
+    g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));   
 
-    g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));   // clear the background
+    //Fill circle
+    g.setColour (Colours::lightblue);
+	g.fillEllipse(0, 0, getWidth(), getHeight());
+    //black outline
+    g.setColour (Colours::black);
+    int thick = 5;
+	g.drawEllipse(thick, thick, getWidth()-2*thick, getHeight()-2*thick, 2*thick);
 
+    //paint text
     g.setColour (Colours::grey);
-    g.drawRect (getLocalBounds(), 1);   // draw an outline around the component
-
-    g.setColour (Colours::white);
-    g.setFont (14.0f);
-    g.drawText ("AudioSrc", getLocalBounds(),
-                Justification::centred, true);   // draw some placeholder text
+    g.setFont (24.0f);
+    g.drawImage(speakerIcon, 25, 25, 50, 50, 0, 0, 512, 512);
 }
 
 void AudioSrc::resized()
@@ -52,4 +59,6 @@ void AudioSrc::resized()
     // This method is where you should set the bounds of any child
     // components that your component contains..
 
+	Rectangle<int> area (getLocalBounds());
+	volume.setBounds(getLocalBounds().reduced(area.getWidth()/8, area.getHeight()/8));
 }

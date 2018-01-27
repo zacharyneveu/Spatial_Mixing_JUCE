@@ -30,8 +30,10 @@ public:
     const float rw = radius * 2.0f;
     const float angle = rotaryStartAngle + sliderPos * (rotaryEndAngle - rotaryStartAngle);
 
-    g.setColour(Colours::forestgreen);
-    g.fillEllipse(rx, ry, rw, rw);
+    g.setColour(Colours::indigo);
+    int thick = 5;
+    //Shrink by thick to avoid cut-off at edges
+    g.drawEllipse(rx+thick, ry+thick, rw-2*thick, rw-2*thick, thick);
 
     Path p;
     const float pointerLength = radius * .33f;
@@ -39,7 +41,7 @@ public:
     p.addRectangle(-pointerThickness * 0.5f, -radius, pointerThickness, pointerLength);
     p.applyTransform(AffineTransform::rotation(angle).translated(centreX, centreY));
 
-    g.setColour(Colours::darkblue);
+    g.setColour(Colours::darkmagenta);
     g.fillPath(p);
   }
 };

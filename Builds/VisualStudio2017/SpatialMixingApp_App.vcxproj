@@ -152,6 +152,7 @@
     <ClCompile Include="..\..\Source\Listener.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
+    <ClCompile Include="..\..\Source\Images.cpp"/>
     <ClCompile Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -1757,6 +1758,7 @@
     <ClCompile Include="..\..\..\..\Applications\JUCE\modules\juce_video\juce_video.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_basics.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_devices.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_formats.cpp"/>
@@ -1777,6 +1779,7 @@
     <ClInclude Include="..\..\Source\Room.h"/>
     <ClInclude Include="..\..\Source\AudioSrc.h"/>
     <ClInclude Include="..\..\Source\Listener.h"/>
+    <ClInclude Include="..\..\Source\Images.h"/>
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h"/>
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\buffers\juce_AudioChannelSet.h"/>
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\buffers\juce_AudioDataConverters.h"/>
@@ -2388,6 +2391,7 @@
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_video\playback\juce_VideoComponent.h"/>
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_video\juce_video.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h"/>
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h"/>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h"/>
   </ItemGroup>
   <ItemGroup>

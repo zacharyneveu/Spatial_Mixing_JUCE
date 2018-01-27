@@ -388,6 +388,9 @@
     <ClCompile Include="..\..\Source\Main.cpp">
       <Filter>SpatialMixingApp\Source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Images.cpp">
+      <Filter>SpatialMixingApp</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\buffers\juce_AudioChannelSet.cpp">
       <Filter>Juce Modules\juce_audio_basics\buffers</Filter>
     </ClCompile>
@@ -2110,6 +2113,9 @@
     <ClCompile Include="..\..\..\..\Applications\JUCE\modules\juce_video\juce_video.mm">
       <Filter>Juce Modules\juce_video</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\BinaryData.cpp">
+      <Filter>Juce Library Code</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_basics.cpp">
       <Filter>Juce Library Code</Filter>
     </ClCompile>
@@ -2165,6 +2171,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Listener.h">
       <Filter>SpatialMixingApp\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Images.h">
+      <Filter>SpatialMixingApp</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Applications\JUCE\modules\juce_audio_basics\audio_play_head\juce_AudioPlayHead.h">
       <Filter>Juce Modules\juce_audio_basics\audio_play_head</Filter>
@@ -3997,6 +4006,9 @@
       <Filter>Juce Modules\juce_video</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\AppConfig.h">
+      <Filter>Juce Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JuceLibraryCode\BinaryData.h">
       <Filter>Juce Library Code</Filter>
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">

@@ -43,8 +43,6 @@ void Room::paint (Graphics& g)
 
     g.setColour (Colours::white);
     g.setFont (14.0f);
-    g.drawText ("Room", getLocalBounds(),
-                Justification::centred, true);   // draw some placeholder text
 }
 
 void Room::resized()

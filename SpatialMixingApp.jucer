@@ -17,6 +17,8 @@
             file="Source/MainComponent.cpp"/>
       <FILE id="yaJ41d" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
+    <FILE id="Bu27Ih" name="Images.cpp" compile="1" resource="1" file="Source/Images.cpp"/>
+    <FILE id="QKkKNA" name="Images.h" compile="0" resource="0" file="Source/Images.h"/>
   </MAINGROUP>
   <EXPORTFORMATS>
     <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0">
