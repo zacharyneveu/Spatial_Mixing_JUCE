@@ -16,6 +16,10 @@ AudioSrc::AudioSrc()
 {
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
+    volume.setSliderStyle(Slider::Rotary);
+    volume.setTextBoxStyle(Slider::NoTextBox, false, 0, 0);
+    volume.setLookAndFeel(&altLook);
+    addAndMakeVisible(volume);
 
 }
 

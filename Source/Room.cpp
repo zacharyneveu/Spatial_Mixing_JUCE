@@ -11,6 +11,8 @@
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "Room.h"
 
+#define COMP_SIZE 100 //Size of child components in pixels
+
 //==============================================================================
 Room::Room()
 {
@@ -49,16 +51,14 @@ void Room::resized()
 {
     // This method is where you should set the bounds of any child
     // components that your component contains..
-	float compWidth = 100;
-	float compHeight = 100;
 	Point<float> sourceOrigin;
 	Point<float> audienceOrigin;
 	sourceOrigin.x = 300;
 	sourceOrigin.y = 200;
-	audienceOrigin.x = 100;
+	audienceOrigin.x = 100;;
 	audienceOrigin.y = 100;
 
-	source.setBounds(sourceOrigin.x - compWidth / 2, sourceOrigin.y - compHeight / 2, compWidth, compHeight);
-	audience.setBounds(audienceOrigin.x - compWidth / 2, audienceOrigin.y - compHeight / 2, compWidth, compHeight);
+	source.setBounds(sourceOrigin.x - COMP_SIZE / 2, sourceOrigin.y - COMP_SIZE / 2, COMP_SIZE, COMP_SIZE);
+	audience.setBounds(audienceOrigin.x - COMP_SIZE / 2, audienceOrigin.y - COMP_SIZE / 2, COMP_SIZE, COMP_SIZE);
 
 }

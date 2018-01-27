@@ -3,9 +3,10 @@
 <JUCERPROJECT id="TQT6lu" name="SpatialMixingApp" displaySplashScreen="1" reportAppUsage="1"
               splashScreenColour="Dark" projectType="guiapp" version="1.0.0"
               bundleIdentifier="com.yourcompany.SpatialMixingApp" includeBinaryInAppConfig="1"
-              jucerVersion="5.1.1" cppLanguageStandard="11">
+              jucerVersion="5.2.0" cppLanguageStandard="11" companyCopyright="">
   <MAINGROUP id="Pi0jBt" name="SpatialMixingApp">
     <GROUP id="{D4A5CEE6-7B03-674F-0AC0-74CC28DECD09}" name="Source">
+      <FILE id="m8WCAj" name="AltLook.h" compile="0" resource="0" file="Source/AltLook.h"/>
       <FILE id="Bf4Ppe" name="Room.cpp" compile="1" resource="0" file="Source/Room.cpp"/>
       <FILE id="zC7XwE" name="Room.h" compile="0" resource="0" file="Source/Room.h"/>
       <FILE id="voyKMP" name="AudioSrc.cpp" compile="1" resource="0" file="Source/AudioSrc.cpp"/>
@@ -18,28 +19,30 @@
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
-    <VS2017 targetFolder="Builds/VisualStudio2017">
+    <VS2017 targetFolder="Builds/VisualStudio2017" windowsTargetPlatformVersion="10.0.16299.0">
       <CONFIGURATIONS>
-        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
-                       isDebug="1" optimisation="1" targetName="SpatialMixingApp"/>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="Win32"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="SpatialMixingApp"/>
         <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
-                       isDebug="0" optimisation="3" targetName="SpatialMixingApp"/>
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="SpatialMixingApp"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_video" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_opengl" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_extra" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_gui_basics" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_graphics" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_events" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_data_structures" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_cryptography" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_core" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_utils" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_processors" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_formats" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_devices" path="..\..\..\..\..\..\JUCE\modules"/>
-        <MODULEPATH id="juce_audio_basics" path="..\..\..\..\..\..\JUCE\modules"/>
+        <MODULEPATH id="juce_video" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_opengl" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_extra" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_events" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_core" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_utils" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_processors" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_formats" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_devices" path="..\..\Applications\JUCE\modules"/>
+        <MODULEPATH id="juce_audio_basics" path="..\..\Applications\JUCE\modules"/>
       </MODULEPATHS>
     </VS2017>
   </EXPORTFORMATS>
@@ -60,4 +63,7 @@
     <MODULE id="juce_video" showAllCode="1" useLocalCopy="0"/>
   </MODULES>
   <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
 </JUCERPROJECT>

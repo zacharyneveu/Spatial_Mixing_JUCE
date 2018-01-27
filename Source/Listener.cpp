@@ -17,7 +17,10 @@ Listener::Listener()
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
 
-	addAndMakeVisible (volume);
+    volume.setSliderStyle(Slider::Rotary);
+    volume.setTextBoxStyle(Slider::NoTextBox, false, 0, 0);
+    volume.setLookAndFeel(&altLook);
+	addAndMakeVisible(volume);
 }
 
 Listener::~Listener()
@@ -45,5 +48,5 @@ void Listener::resized()
     // components that your component contains..
 
 	Rectangle<int> area (getLocalBounds());
-	volume.setBounds(getLocalBounds());
+	volume.setBounds(getLocalBounds().reduced(area.getWidth()/8, area.getHeight()/8));
 }

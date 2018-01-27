@@ -11,6 +11,7 @@
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "AltLook.h"
 
 //==============================================================================
 /*
@@ -50,6 +51,8 @@ private:
 	float rEarDelay;
 	float reverbSend;
 
-	ComponentDragger dragger;
+	ComponentDragger dragger; //to drag component
+
+	AltLook altLook; //instance of alt style
 
 };
